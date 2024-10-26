@@ -7,8 +7,8 @@ buildscript {
     }
 }
 
-//apply plugin: 'android'
-//apply plugin: 'com.android.application'
+ apply plugin: 'android'
+
 
 
 android {
@@ -35,5 +35,6 @@ dependencies {
     implementation project(':library')
     compile 'com.android.support:appcompat-v7:27.1.1'
 	compile 'com.android.support:design:27.1.1'
+	compile 'io.debacodex:test:1.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
